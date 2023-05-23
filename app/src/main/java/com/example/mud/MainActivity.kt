@@ -43,35 +43,6 @@ class MainActivity : AppCompatActivity() {
 
         web3j = Web3j.build(HttpService("http://10.0.2.2:8545"))
 
-/*        val response = web3j.ethGetTransactionByHash("0xa5c22a91653aed0a9c6f8088f8d9b86ae57cf8f98001af64417ccb790346eb8a").sendAsync().get()
-        val sBuilder = StringBuilder()
-
-        if (response.rawResponse != null){
-            sBuilder.append("raw=")
-            sBuilder.append(response.rawResponse)
-        }
-        if (response.jsonrpc != null){
-            sBuilder.append(" jsonrpc=")
-            sBuilder.append(response.jsonrpc)
-        }
-        if (response.result != null){
-            sBuilder.append(" result=")
-            sBuilder.append(response.result.from)
-        }
-
-        if (response.transaction != null){
-            sBuilder.append(" transaction=")
-            sBuilder.append(response.transaction.get().to)
-        }
-
-        if (response.error != null){
-            sBuilder.append(" error=")
-            sBuilder.append(response.error.message)
-        }
-        sBuilder.append(" Fuck")
-
-        Log.d("Babak2" , sBuilder.toString())*/
-
         move = findViewById<Button>(R.id.button2)
         move.setOnClickListener {
             move(true)
